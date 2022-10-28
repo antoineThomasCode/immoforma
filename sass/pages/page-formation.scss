@@ -172,3 +172,110 @@
         }
     }
 }
+/* tab style  */
+.pc-tab { 
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      li {
+        label {
+          font-family: "Raleway";
+          float: left;
+          padding: 15px 25px;
+          border: 1px solid #ddd;
+          border-bottom: 0;
+          background: white;
+          color: #444;
+          &:hover {
+            background: white;
+          }
+          &:active {
+            background: white;
+          }
+        }
+        &:not(:last-child) label {
+           border-right-width: 0; 
+        }
+      }
+    }
+    .formation-immo__tabs {
+      font-family: "Droid Serif";
+      clear: both;
+      display: flex;
+      flex-wrap: wrap;
+      flex-basis: 100%;
+      .pc-tab {
+        padding: 20px; 
+        display: flex;
+        flex-basis: 100%;
+        max-width: 1240px;
+        margin: 0 auto;
+        border-bottom: 1px solid #ddd;
+        color: #444;
+      }
+    }
+  }
+#tab1:checked ~ nav .tab1,
+#tab2:checked ~ nav .tab2,
+#tab3:checked ~ nav .tab3,
+#tab4:checked ~ nav .tab4,
+#tab5:checked ~ nav .tab5 {
+  label {
+    background: white;
+    color: #111;
+    position: relative;
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      height: 2px;
+      width: 100%;
+      background: red;
+      left: 0;
+      bottom: -1px;
+    }
+  }
+}
+.pc-tab > input,
+.pc-tab section > div {
+  display: none;
+}
+
+#tab1:checked ~ section .tab1,
+#tab2:checked ~ section .tab2,
+#tab3:checked ~ section .tab3,
+#tab4:checked ~ section .tab4,
+#tab5:checked ~ section .tab5 {
+  display: block;
+}
+
+#tab1:checked ~ nav .tab1,
+#tab2:checked ~ nav .tab2,
+#tab3:checked ~ nav .tab3,
+#tab4:checked ~ nav .tab4,
+#tab5:checked ~ nav .tab5 {
+  color: red;
+}
+.tab1 > h2, .tab2> h2, .tab3> h2, .tab4> h2, .tab5> h2 {
+
+
+}
+.formation-immo__tabs {
+    display: flex;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+    .pc-tab {
+        display: flex;
+        flex-wrap: wrap;
+        flex-basis: 100%;
+        max-width: 1240px;
+        margin: 0 auto;
+        > nav {
+            flex-basis: 100%;
+        }
+    }
+}

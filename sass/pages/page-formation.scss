@@ -1,0 +1,174 @@
+.formation-immo__container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    .formation-immo__header {
+        display: flex;
+        flex-basis: 100%;
+        background-color: $primary-color;
+        padding-bottom: 80px;
+        .formation-immo__header-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            max-width: 1240px;
+            margin: 0 auto;
+            position: relative;
+            .formation-immo__breadcrumb {
+                display: flex;
+                flex-basis: 100%;
+                flex-wrap: wrap;
+                color: white;
+                padding-top: 20px;
+                > a {
+                    text-decoration: none;
+                    color: white;
+                    margin: 0 10px;
+                }
+                
+            }
+            .formation-immo__formation-infos {
+                display: flex;
+                flex-wrap: wrap;
+                flex-basis: 50%;
+                margin-top: 100px;
+                > h1 {
+                    color: white;
+                    margin-bottom: 50px;
+                }
+                > p {
+                    color: white;
+                }
+                
+            }
+            .formation-immo__info-card {
+                position: absolute;
+                display: flex;
+                width: 530px;
+                right: 0;
+                top: 80px;
+                flex-wrap: wrap;
+                background-color: white;
+                border-radius: 14px;
+                padding: 15px;
+                box-shadow: 0px 4px 4px rgba(26, 31, 104, 0.25);
+                > figure {
+                    display: flex;
+                    flex-basis: 100%;
+                    position: relative;
+                    border-radius: 15px;
+                    > img {
+                        display: flex;
+                        height: 280px;
+                        width: 100%;
+                        object-fit: cover;
+                        border-radius: 15px;
+                    }
+                    .info-card-duration {
+                        display: flex;
+                        align-items: center;
+                        position: absolute;
+                        background-color: $yellow-immoforma;
+                        bottom: -20px;
+                        right: 40px;
+                        border-radius: 30px;
+                        padding: 5px 20px;
+                        > img {
+                            height: 20px;
+                        }
+                        > span {
+                            color: $primary-color;
+                            margin-left: 10px;
+                            font-weight: bold;
+                            
+                        }
+                    }
+                }
+                .info-card__informations-container {
+                    display: flex;
+                    flex-basis: 100%;
+                    flex-wrap: wrap;
+                    margin-top: 60px;
+                    .category-formation {
+                        color: $red-immoforma;
+                        text-transform: uppercase;
+                        display: flex;
+                        flex-basis: 100%;
+                        font-weight: 600;
+                        font-size: 16px;
+                    }
+                    > h2 {
+                        color: $primary-color;
+                        display: flex;
+                        flex-basis: 100%;
+                        font-size: 22px;
+                    }
+                    ul {
+                        display: flex;
+                        flex-wrap: wrap;
+                        li {
+                            display: flex;
+                            padding: 10px 0;
+                            flex-basis: 100%;
+                            align-items: center;
+                            color: #4D545E;
+                            font-size: 16px;
+                            >img {
+                                margin-right: 15px;
+                            }
+                        }
+                    }
+                    .btn-container {
+                        display: flex;
+                        flex-basis: 100%;
+                        justify-content: flex-end;
+                    }
+                }
+                
+            }
+        }
+    }
+    
+}
+.formation-immo__steps {
+    display: flex;
+    flex-basis: 100%;
+    padding: 50px 0;
+    .formation-immo__steps-content {
+        display: flex;
+        flex-basis: 100%;
+        max-width: 1240px;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        > h2 {
+            flex-basis: 100%;
+            text-transform: uppercase;
+            color: $primary-color;
+            font-size: 28px;
+        }
+        ol {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 20px;
+            li {
+                display: flex;
+                flex-basis: 100%;
+                align-items: center;
+                margin-bottom: 15px;
+                font-size: 18px;
+                color: #4D545E;
+                > span {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: $yellow-immoforma;
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                    color: white;
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
+}

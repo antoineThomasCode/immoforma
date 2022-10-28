@@ -1,0 +1,299 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* end of reset.css */
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-size: 42px;
+  line-height: 60px;
+  font-weight: 700;
+}
+
+h2 {
+  font: 28px;
+  line-height: 50px;
+  font-weight: 600;
+}
+
+h3 {
+  font: 24px;
+  line-height: 30px;
+  font-weight: 500;
+  color: #1B43A9;
+}
+
+h4 {
+  font: 20px;
+  line-height: 30px;
+  font-weight: 500;
+}
+
+h5 {
+  font: 18px;
+  line-height: 30px;
+  font-weight: 400;
+}
+
+h6 {
+  font: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.gold {
+  font-weight: bold;
+  color: #F6CE66;
+}
+
+.btn-primary-formation {
+  display: flex;
+  padding: 10px 20px;
+  align-items: center;
+  justify-content: center;
+  background-color: #459A8A;
+  border-radius: 50px;
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 20px 0;
+  justify-self: flex-end;
+}
+.btn-primary-formation > img {
+  margin-left: 10px;
+}
+
+.formation-immo__container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 100%;
+}
+.formation-immo__container .formation-immo__header {
+  display: flex;
+  flex-basis: 100%;
+  background-color: #405BC0;
+  padding-bottom: 80px;
+}
+.formation-immo__container .formation-immo__header .formation-immo__header-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1240px;
+  margin: 0 auto;
+  position: relative;
+}
+.formation-immo__container .formation-immo__header .formation-immo__header-content .formation-immo__breadcrumb {
+  display: flex;
+  flex-basis: 100%;
+  flex-wrap: wrap;
+  color: white;
+  padding-top: 20px;
+}
+.formation-immo__container .formation-immo__header .formation-immo__header-content .formation-immo__breadcrumb > a {
+  text-decoration: none;
+  color: white;
+  margin: 0 10px;
+}
+.formation-immo__container .formation-immo__header .formation-immo__header-content .formation-immo__formation-infos {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 50%;
+  margin-top: 100px;
+}
+.formation-immo__container .formation-immo__header .formation-immo__header-content .formation-immo__formation-infos > h1 {
+  color: white;
+  margin-bottom: 50px;
+}
+.formation-immo__container .formation-immo__header .formation-immo__header-content .formation-immo__formation-infos > p {
+  color: white;
+}
+.formation-immo__container .formation-immo__header .formation-immo__header-content .formation-immo__info-card {
+  position: absolute;
+  display: flex;
+  width: 530px;
+  right: 0;
+  top: 80px;
+  flex-wrap: wrap;
+  background-color: white;
+  border-radius: 14px;
+  padding: 15px;
+  box-shadow: 0px 4px 4px rgba(26, 31, 104, 0.25);
+}
+.formation-immo__container .formation-immo__header .formation-immo__header-content .formation-immo__info-card > figure {
+  display: flex;
+  flex-basis: 100%;
+  position: relative;
+  border-radius: 15px;
+}
+.formation-immo__container .formation-immo__header .formation-immo__header-content .formation-immo__info-card > figure > img {
+  display: flex;
+  height: 280px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+.formation-immo__container .formation-immo__header .formation-immo__header-content .formation-immo__info-card > figure .info-card-duration {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  background-color: #F6CE66;
+  bottom: -20px;
+  right: 40px;
+  border-radius: 30px;
+  padding: 5px 20px;
+}
+.formation-immo__container .formation-immo__header .formation-immo__header-content .formation-immo__info-card > figure .info-card-duration > img {
+  height: 20px;
+}
+.formation-immo__container .formation-immo__header .formation-immo__header-content .formation-immo__info-card > figure .info-card-duration > span {
+  color: #405BC0;
+  margin-left: 10px;
+  font-weight: bold;
+}
+.formation-immo__container .formation-immo__header .formation-immo__header-content .formation-immo__info-card .info-card__informations-container {
+  display: flex;
+  flex-basis: 100%;
+  flex-wrap: wrap;
+  margin-top: 60px;
+}
+.formation-immo__container .formation-immo__header .formation-immo__header-content .formation-immo__info-card .info-card__informations-container .category-formation {
+  color: #D22F4E;
+  text-transform: uppercase;
+  display: flex;
+  flex-basis: 100%;
+  font-weight: 600;
+  font-size: 16px;
+}
+.formation-immo__container .formation-immo__header .formation-immo__header-content .formation-immo__info-card .info-card__informations-container > h2 {
+  color: #405BC0;
+  display: flex;
+  flex-basis: 100%;
+  font-size: 22px;
+}
+.formation-immo__container .formation-immo__header .formation-immo__header-content .formation-immo__info-card .info-card__informations-container ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.formation-immo__container .formation-immo__header .formation-immo__header-content .formation-immo__info-card .info-card__informations-container ul li {
+  display: flex;
+  padding: 10px 0;
+  flex-basis: 100%;
+  align-items: center;
+  color: #4D545E;
+  font-size: 16px;
+}
+.formation-immo__container .formation-immo__header .formation-immo__header-content .formation-immo__info-card .info-card__informations-container ul li > img {
+  margin-right: 15px;
+}
+.formation-immo__container .formation-immo__header .formation-immo__header-content .formation-immo__info-card .info-card__informations-container .btn-container {
+  display: flex;
+  flex-basis: 100%;
+  justify-content: flex-end;
+}
+
+.formation-immo__steps {
+  display: flex;
+  flex-basis: 100%;
+  padding: 50px 0;
+}
+.formation-immo__steps .formation-immo__steps-content {
+  display: flex;
+  flex-basis: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+.formation-immo__steps .formation-immo__steps-content > h2 {
+  flex-basis: 100%;
+  text-transform: uppercase;
+  color: #405BC0;
+  font-size: 28px;
+}
+.formation-immo__steps .formation-immo__steps-content ol {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+.formation-immo__steps .formation-immo__steps-content ol li {
+  display: flex;
+  flex-basis: 100%;
+  align-items: center;
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #4D545E;
+}
+.formation-immo__steps .formation-immo__steps-content ol li > span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F6CE66;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  color: white;
+  margin-right: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */

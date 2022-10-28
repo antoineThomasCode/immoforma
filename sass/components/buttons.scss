@@ -1,0 +1,17 @@
+.btn-primary-formation {
+    display: flex;
+    padding: 10px 20px;
+    align-items: center;
+    justify-content: center;
+    background-color: #459A8A;
+    border-radius: 50px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 20px 0;
+    justify-self: flex-end;
+    > img {
+        margin-left: 10px;
+    }
+}

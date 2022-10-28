@@ -391,6 +391,7 @@ h6 {
   display: flex;
   flex-basis: 100%;
   flex-wrap: wrap;
+  padding: 50px 0;
 }
 .formation-immo__tabs .pc-tab {
   display: flex;

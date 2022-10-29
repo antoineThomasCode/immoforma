@@ -102,6 +102,14 @@ h6 {
   font-weight: 400;
 }
 
+label {
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
 .gold {
   font-weight: bold;
   color: #F6CE66;
@@ -174,7 +182,7 @@ h6 {
   display: flex;
   width: 530px;
   right: 0;
-  top: 80px;
+  top: 50px;
   flex-wrap: wrap;
   background-color: white;
   border-radius: 14px;
@@ -306,7 +314,6 @@ h6 {
   list-style: none;
   margin: 0;
   padding: 0;
-  background-color: green;
 }
 .pc-tab ul li label {
   float: left;
@@ -428,6 +435,28 @@ h6 {
 }
 .formation-immo__tabs .pc-tab > nav {
   flex-basis: 100%;
+}
+
+.module-list {
+  margin-top: 20px !important;
+}
+
+.module-title {
+  margin-top: 30px;
+}
+
+.module-list-item {
+  list-style: inside;
+}
+
+.program-link {
+  color: #459A8A;
+  display: flex;
+  align-items: center;
+}
+
+.program-link-image {
+  margin-right: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */

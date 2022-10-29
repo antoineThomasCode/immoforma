@@ -181,15 +181,14 @@
       list-style: none;
       margin: 0;
       padding: 0;
+      background-color: green;
       li {
         label {
-          font-family: "Raleway";
           float: left;
           padding: 15px 25px;
-          border: 1px solid #ddd;
-          border-bottom: 0;
           background: white;
-          color: #444;
+          position: relative;
+          bottom: 56px;
           &:hover {
             background: white;
           }
@@ -203,7 +202,6 @@
       }
     }
     .formation-immo__tabs {
-      font-family: "Droid Serif";
       clear: both;
       display: flex;
       flex-wrap: wrap;
@@ -214,8 +212,6 @@
         flex-basis: 100%;
         max-width: 1240px;
         margin: 0 auto;
-        border-bottom: 1px solid #ddd;
-        color: #444;
       }
     }
   }
@@ -228,15 +224,42 @@
     background: white;
     color: #111;
     position: relative;
+    color: #D22F4E;
+    font-weight: 700;
     &:after {
       content: '';
+      z-index: 3;
       display: block;
       position: absolute;
-      height: 2px;
+      height: 4px;
       width: 100%;
-      background: red;
+      background: #D22F4E;
+      border-radius: 50px;
       left: 0;
-      bottom: -1px;
+      bottom: -2px;
+      box-shadow: 0px 4px 4px 0px #D9D9D9B2;
+    }
+  }
+}
+#tab1 ~ nav .tab1,
+#tab2 ~ nav .tab2,
+#tab3 ~ nav .tab3,
+#tab4 ~ nav .tab4,
+#tab5 ~ nav .tab5 {
+  label {
+    color: $primary-color;
+    font-weight: 500;
+    &:after {
+        content: '';
+        z-index: 3;
+        display: block;
+        position: absolute;
+        height: 2px;
+        width: 100%;
+        background: rgba(211, 211, 211, 0.557);
+        border-radius: 50px;
+        left: 0;
+        bottom: -1px;  
     }
   }
 }
@@ -257,13 +280,10 @@
 #tab2:checked ~ nav .tab2,
 #tab3:checked ~ nav .tab3,
 #tab4:checked ~ nav .tab4,
-#tab5:checked ~ nav .tab5 {
-  color: red;
+#tab5:checked ~  .tab5 {
+  color: red !important;
 }
-.tab1 > h2, .tab2> h2, .tab3> h2, .tab4> h2, .tab5> h2 {
 
-
-}
 .formation-immo__tabs {
     display: flex;
     flex-basis: 100%;

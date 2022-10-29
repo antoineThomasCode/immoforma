@@ -56,7 +56,7 @@ table {
 
 /* end of reset.css */
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
   line-height: 24px;
 }
@@ -306,15 +306,14 @@ h6 {
   list-style: none;
   margin: 0;
   padding: 0;
+  background-color: green;
 }
 .pc-tab ul li label {
-  font-family: "Raleway";
   float: left;
   padding: 15px 25px;
-  border: 1px solid #ddd;
-  border-bottom: 0;
   background: white;
-  color: #444;
+  position: relative;
+  bottom: 56px;
 }
 .pc-tab ul li label:hover {
   background: white;
@@ -326,7 +325,6 @@ h6 {
   border-right-width: 0;
 }
 .pc-tab .formation-immo__tabs {
-  font-family: "Droid Serif";
   clear: both;
   display: flex;
   flex-wrap: wrap;
@@ -338,8 +336,6 @@ h6 {
   flex-basis: 100%;
   max-width: 1240px;
   margin: 0 auto;
-  border-bottom: 1px solid #ddd;
-  color: #444;
 }
 
 #tab1:checked ~ nav .tab1 label,
@@ -350,6 +346,8 @@ h6 {
   background: white;
   color: #111;
   position: relative;
+  color: #D22F4E;
+  font-weight: 700;
 }
 #tab1:checked ~ nav .tab1 label:after,
 #tab2:checked ~ nav .tab2 label:after,
@@ -357,11 +355,39 @@ h6 {
 #tab4:checked ~ nav .tab4 label:after,
 #tab5:checked ~ nav .tab5 label:after {
   content: "";
+  z-index: 3;
+  display: block;
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  background: #D22F4E;
+  border-radius: 50px;
+  left: 0;
+  bottom: -2px;
+  box-shadow: 0px 4px 4px 0px rgba(217, 217, 217, 0.6980392157);
+}
+
+#tab1 ~ nav .tab1 label,
+#tab2 ~ nav .tab2 label,
+#tab3 ~ nav .tab3 label,
+#tab4 ~ nav .tab4 label,
+#tab5 ~ nav .tab5 label {
+  color: #405BC0;
+  font-weight: 500;
+}
+#tab1 ~ nav .tab1 label:after,
+#tab2 ~ nav .tab2 label:after,
+#tab3 ~ nav .tab3 label:after,
+#tab4 ~ nav .tab4 label:after,
+#tab5 ~ nav .tab5 label:after {
+  content: "";
+  z-index: 3;
   display: block;
   position: absolute;
   height: 2px;
   width: 100%;
-  background: red;
+  background: rgba(211, 211, 211, 0.557);
+  border-radius: 50px;
   left: 0;
   bottom: -1px;
 }
@@ -383,8 +409,8 @@ h6 {
 #tab2:checked ~ nav .tab2,
 #tab3:checked ~ nav .tab3,
 #tab4:checked ~ nav .tab4,
-#tab5:checked ~ nav .tab5 {
-  color: red;
+#tab5:checked ~ .tab5 {
+  color: red !important;
 }
 
 .formation-immo__tabs {

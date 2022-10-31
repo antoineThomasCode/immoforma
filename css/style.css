@@ -291,6 +291,7 @@ label {
   margin-bottom: 15px;
   font-size: 18px;
   color: #4D545E;
+  font-family: "Poppins", sans-serif;
 }
 .formation-immo__steps .formation-immo__steps-content ol li > span {
   display: flex;

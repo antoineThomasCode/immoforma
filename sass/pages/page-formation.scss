@@ -162,7 +162,7 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    background-color: $yellow-immoforma;
+                    background-color: $primary-color;
                     width: 30px;
                     height: 30px;
                     border-radius: 50%;
@@ -318,4 +318,36 @@
 }
 .program-link-image {
     margin-right: 10px;
+}
+
+
+.competences-list-item {
+    position: relative;
+    align-items: start;
+    color: $gris-1;
+    line-height: 24px;
+    padding: 5px 0 5px 25px;
+
+    > img {
+        margin-right: 10px;
+        position: absolute;
+        top: 6px;
+        left: 0;
+    }
+}
+.tab2, .tab3, .tab4, .tab5 {
+    width: 80%;
+    > p {
+        margin-bottom: 30px;
+        color: $gris-1;
+    }
+    > h3 {
+        width: 100%;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+    }
+}
+.title-faq {
+    width: 100% !important;
+    min-width: 280px;
 }
